@@ -14,11 +14,15 @@
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.08);
 }
 
+.nav {
+  height: 72px;
+}
+
 .nav__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 130px;
+  height: 100%;
 }
 
 /* Logo */
