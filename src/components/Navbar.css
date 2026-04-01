@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 130px;
 }
 
 /* Logo */
@@ -332,5 +332,12 @@
   .nav__portal {
     color: #999;
     border-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: relative !important;
+    top: auto !important;
   }
 }
