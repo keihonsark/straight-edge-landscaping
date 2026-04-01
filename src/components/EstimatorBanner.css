@@ -1,6 +1,6 @@
 .est-banner {
   padding: 4rem 0;
-  background: var(--green-pale);
+  background: #0a0a0a;
   border-top: 1px solid rgba(122, 184, 0, 0.1);
   border-bottom: 1px solid rgba(122, 184, 0, 0.1);
 }
@@ -15,12 +15,12 @@
 .est-banner__title {
   font-size: 1.75rem;
   font-weight: 800;
-  color: #0a0a0a;
+  color: #fff;
   margin-bottom: 0.5rem;
 }
 
 .est-banner__sub {
-  color: #555;
+  color: #999;
   font-size: 0.95rem;
   line-height: 1.6;
   max-width: 480px;

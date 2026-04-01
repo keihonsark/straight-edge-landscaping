@@ -23,7 +23,7 @@ const config = {
     placeId: "",
     mapsUrl: "",
     rating: 5.0,
-    reviewCount: "9",
+    reviewCount: "27+",
     reviews: [
       { name: "Greg G.", location: "New York, NY", text: "Nick came out and cleaned up my backyard which was in terrible disrepair — extremely timely, on short notice, and it looks amazing. There are a lot of shady landscape companies out there, but Nick and Straight Edge are not one of them. 100% a top tier company." },
       { name: "Grant M.", location: "Fresno, CA", text: "Perfect job and good pricing! Nick is an honest person and a perfectionist. Happy I found him to get the job done!" },

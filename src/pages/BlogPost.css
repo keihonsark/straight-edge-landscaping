@@ -24,6 +24,7 @@
   justify-content: center;
   gap: 1.5rem;
   padding-top: 100px;
+  color: #e0e0e0;
 }
 
 .bp-notfound a {
@@ -62,7 +63,7 @@
 .bp-article__title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #0a0a0a;
+  color: #fff;
   line-height: 1.15;
   margin-bottom: 0.75rem;
 }
@@ -72,19 +73,19 @@
   color: #888;
   margin-bottom: 2.5rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .bp-article__body {
   font-size: 1.05rem;
   line-height: 1.9;
-  color: #444;
+  color: #e0e0e0;
 }
 
 .bp-article__body h2 {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #0a0a0a;
+  color: #fff;
   margin-top: 2.5rem;
   margin-bottom: 0.75rem;
 }
@@ -94,14 +95,14 @@
 }
 
 .bp-article__body .blog__tip {
-  background: var(--green-pale);
+  background: #1a1a1a;
   border-left: 4px solid #7ab800;
   padding: 1.25rem 1.5rem;
   border-radius: 0 12px 12px 0;
   margin: 2rem 0;
   font-size: 0.95rem;
   line-height: 1.7;
-  color: #333;
+  color: #e0e0e0;
 }
 
 .bp-article__body .blog__tip strong {
@@ -109,7 +110,7 @@
 }
 
 .bp-article__cta {
-  background: var(--green-pale);
+  background: #161616;
   border-radius: 16px;
   padding: 2.5rem;
   text-align: center;
@@ -119,7 +120,7 @@
 .bp-article__cta h2 {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #0a0a0a;
+  color: #fff;
   margin-bottom: 1.25rem;
 }
 
@@ -143,7 +144,7 @@
 .bp-article__back {
   margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .bp-article__back a {

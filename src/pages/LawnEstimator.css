@@ -53,7 +53,7 @@
 /* Tool section */
 .le-tool {
   padding: 2rem 0 5rem;
-  background: #fff;
+  background: #0a0a0a;
 }
 
 .le-controls {
@@ -71,19 +71,23 @@
 .le-search__input {
   width: 100%;
   padding: 0.75rem 1rem;
-  border: 2px solid #e0e0e0;
+  border: 2px solid rgba(255,255,255,0.15);
   border-radius: 12px;
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: #333;
-  background: #fafafa;
+  color: #fff;
+  background: #1a1a1a;
   transition: border-color 0.25s;
+}
+
+.le-search__input::placeholder {
+  color: #666;
 }
 
 .le-search__input:focus {
   outline: none;
   border-color: var(--green);
-  background: #fff;
+  background: #1a1a1a;
 }
 
 /* Google Places autocomplete dropdown */
@@ -138,20 +142,20 @@
 }
 
 .le-btn--reset {
-  background: #f0f0f0;
-  color: #555;
+  background: #222;
+  color: #ccc;
 }
 
 .le-btn--reset:hover {
-  background: #e0e0e0;
+  background: #333;
 }
 
 .le-hint {
-  background: var(--green-pale);
+  background: #1a1a1a;
   border-left: 4px solid #7ab800;
   padding: 0.75rem 1rem;
   font-size: 0.88rem;
-  color: #333;
+  color: #e0e0e0;
   border-radius: 0 8px 8px 0;
   margin-bottom: 1rem;
 }
@@ -163,7 +167,7 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-  border: 2px solid #e8e8e8;
+  border: 2px solid rgba(255,255,255,0.08);
 }
 
 /* Results */
@@ -178,7 +182,7 @@
 }
 
 .le-result__card {
-  background: #fff;
+  background: #161616;
   border-radius: 20px;
   border-top: 5px solid #7ab800;
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.1);
@@ -198,11 +202,11 @@
 }
 
 .le-result__zones {
-  background: #fafafa;
+  background: #1a1a1a;
   border-radius: 12px;
   padding: 1rem 1.25rem;
   margin-bottom: 1.25rem;
-  border: 1px solid #eee;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .le-result__zone {
@@ -210,7 +214,7 @@
   justify-content: space-between;
   padding: 0.35rem 0;
   font-size: 0.9rem;
-  color: #555;
+  color: #ccc;
 }
 
 .le-result__zone-label {
@@ -219,7 +223,7 @@
 
 .le-result__zone-sqft {
   font-weight: 600;
-  color: #333;
+  color: #fff;
 }
 
 .le-result__total-label {
@@ -231,7 +235,7 @@
 .le-result__sqft {
   font-size: 3.5rem;
   font-weight: 800;
-  color: #0a0a0a;
+  color: #fff;
   line-height: 1;
   margin-bottom: 1.5rem;
 }
@@ -253,7 +257,7 @@
   font-size: 0.95rem;
   font-weight: 700;
   color: #7ab800;
-  background: var(--green-pale);
+  background: rgba(122,184,0,0.1);
   padding: 0.3rem 0.85rem;
   border-radius: 100px;
 }
@@ -274,7 +278,7 @@
 .le-result__price-value {
   font-size: 1.75rem;
   font-weight: 800;
-  color: #0a0a0a;
+  color: #fff;
 }
 
 .le-result__price-note {

@@ -1,7 +1,7 @@
 .est-page {
   min-height: 100vh; /* fallback */
   min-height: 100dvh;
-  background: #f0fdf4;
+  background: #0a0a0a;
 }
 
 /* Header */
@@ -38,14 +38,14 @@
 
 /* Progress Bar */
 .est-progress {
-  background: #fff;
+  background: #111111;
   padding: 1.5rem 0;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
 
 .est-progress__bar {
   height: 4px;
-  background: #e8efe8;
+  background: #222;
   border-radius: 4px;
   margin-bottom: 1rem;
   overflow: hidden;
@@ -74,9 +74,9 @@
   justify-content: center;
   font-size: 0.8rem;
   font-weight: 600;
-  background: #fff;
-  color: #aaa;
-  border: 2px solid #ddd;
+  background: #161616;
+  color: #666;
+  border: 2px solid #333;
   transition: all 0.3s ease;
 }
 
@@ -102,9 +102,9 @@
 
 /* Card */
 .est-card {
-  background: #fff;
+  background: #161616;
   border-radius: 24px;
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.2);
   padding: 2.5rem;
   width: 100%;
   max-width: 640px;
@@ -152,18 +152,18 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #666;
+  color: #999;
 }
 
 .est-field input,
 .est-field select {
   padding: 0.75rem 1rem;
-  border: 1.5px solid #e0e0e0;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
   border-radius: 10px;
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: #333;
-  background: #fafafa;
+  color: #fff;
+  background: #1a1a1a;
   transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
 }
 
@@ -171,14 +171,19 @@
 .est-field select:focus {
   outline: none;
   border-color: var(--green);
-  background: #fff;
+  background: #1a1a1a;
   box-shadow: 0 0 0 3px rgba(122, 184, 0, 0.1);
+}
+
+.est-field input::placeholder,
+.est-field select::placeholder {
+  color: #666;
 }
 
 .est-label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #444;
+  color: #ccc;
   margin-bottom: 0.75rem;
   margin-top: 0.5rem;
 }
@@ -197,9 +202,9 @@
   align-items: center;
   gap: 0.35rem;
   padding: 1.25rem 0.75rem;
-  border: 2px solid #e8efe8;
+  border: 2px solid #333;
   border-radius: 16px;
-  background: #fff;
+  background: #161616;
   cursor: pointer;
   transition: all 0.25s ease;
   font-family: var(--font-body);
@@ -211,7 +216,7 @@
 
 .est-size-card.active {
   border-color: var(--green);
-  background: var(--green-pale);
+  background: rgba(122, 184, 0, 0.1);
 }
 
 .est-size-card__icon {
@@ -221,7 +226,7 @@
 .est-size-card__label {
   font-weight: 600;
   font-size: 0.95rem;
-  color: var(--green-dark);
+  color: #fff;
 }
 
 .est-size-card__sub {
@@ -239,13 +244,13 @@
 
 .est-pill {
   padding: 0.55rem 1.15rem;
-  border: 1.5px solid #e0e0e0;
+  border: 1.5px solid #333;
   border-radius: 50px;
   font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 500;
-  background: #fff;
-  color: #555;
+  background: #161616;
+  color: #ccc;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -277,9 +282,9 @@
   align-items: center;
   gap: 0.6rem;
   padding: 0.85rem 1rem;
-  border: 1.5px solid #e8efe8;
+  border: 1.5px solid #333;
   border-radius: 12px;
-  background: #fff;
+  background: #161616;
   cursor: pointer;
   transition: all 0.2s ease;
   font-family: var(--font-body);
@@ -293,7 +298,7 @@
 
 .est-svc-card.active {
   border-color: var(--green);
-  background: var(--green-pale);
+  background: rgba(122, 184, 0, 0.1);
 }
 
 .est-svc-card__icon {
@@ -304,7 +309,7 @@
 .est-svc-card__name {
   font-weight: 600;
   font-size: 0.82rem;
-  color: var(--green-dark);
+  color: #fff;
   line-height: 1.2;
   flex: 1;
 }
@@ -321,7 +326,7 @@
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 0.8rem;
-  color: #666;
+  color: #999;
 }
 
 .est-svc-card__units label {
@@ -332,11 +337,13 @@
 .est-svc-card__units input {
   width: 60px;
   padding: 0.35rem 0.5rem;
-  border: 1.5px solid #e0e0e0;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
   border-radius: 8px;
   font-family: var(--font-body);
   font-size: 0.85rem;
   text-align: center;
+  background: #1a1a1a;
+  color: #fff;
 }
 
 .est-svc-card__units input:focus {
@@ -363,11 +370,11 @@
 
 /* Summary */
 .est-summary {
-  background: #fafafa;
+  background: #1a1a1a;
   border-radius: 16px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  border: 1px solid #eee;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .est-summary__row {
@@ -375,12 +382,12 @@
   justify-content: space-between;
   padding: 0.5rem 0;
   font-size: 0.88rem;
-  color: #444;
+  color: #ccc;
 }
 
 .est-summary__row span:last-child {
   font-weight: 600;
-  color: var(--green-dark);
+  color: #a0d400;
   text-align: right;
 }
 
@@ -391,7 +398,7 @@
 
 .est-summary__divider {
   height: 1px;
-  background: #eee;
+  background: rgba(255, 255, 255, 0.08);
   margin: 0.5rem 0;
 }
 
@@ -409,7 +416,7 @@
   gap: 1rem;
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .est-btn {
@@ -500,7 +507,7 @@
 
 .est-success__text {
   font-size: 1.15rem;
-  color: #555;
+  color: #ccc;
   margin-bottom: 0.5rem;
 }
 

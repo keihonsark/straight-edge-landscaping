@@ -1,5 +1,6 @@
 .areas {
   padding: 6rem 0;
+  background: #0a0a0a;
 }
 
 .areas__grid {
@@ -24,7 +25,7 @@
 }
 
 .areas__text {
-  color: #555;
+  color: #e0e0e0;
   line-height: 1.75;
   margin-bottom: 1.5rem;
 }
@@ -39,11 +40,11 @@
   display: inline-block;
   padding: 0.5rem 1.15rem;
   border-radius: 50px;
-  background: var(--green-pale);
-  color: var(--green-dark);
+  background: #161616;
+  color: #a0d400;
   font-weight: 500;
   font-size: 0.9rem;
-  border: 1px solid rgba(45, 106, 79, 0.12);
+  border: 1px solid rgba(122, 184, 0, 0.2);
   transition: background 0.2s, transform 0.2s;
 }
 

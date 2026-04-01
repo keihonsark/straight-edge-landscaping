@@ -31,14 +31,6 @@ export default function Hero() {
       <div className="hero__overlay" />
 
       <div className="container hero__content">
-        <img
-          src="/straightedgelogo.png"
-          alt={config.business.name}
-          className="hero__logo"
-        />
-
-        <div className="hero__badge">Licensed · Insured · Local</div>
-
         <h1 className="hero__title">
           Your Property,<br />
           <em className={`hero__cycle ${fade ? 'hero__cycle--in' : 'hero__cycle--out'}`}>

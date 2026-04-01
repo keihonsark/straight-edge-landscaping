@@ -22,7 +22,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(10, 10, 10, 0.6);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .hero__content {
@@ -61,7 +61,7 @@
 
 .hero__title em {
   font-style: normal;
-  background: linear-gradient(90deg, #7ab800, #a0d400, #a8e6c1, #a0d400, #7ab800);
+  background: linear-gradient(90deg, #ffffff, #cccccc, #7ab800, #ffffff);
   background-size: 300% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

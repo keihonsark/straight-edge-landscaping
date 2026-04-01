@@ -1,6 +1,6 @@
 .contact {
   padding: 6rem 0;
-  background: var(--green-pale);
+  background: #111111;
 }
 
 .contact__grid {
@@ -25,7 +25,7 @@
 }
 
 .contact__text {
-  color: #555;
+  color: #e0e0e0;
   line-height: 1.75;
   margin-bottom: 2rem;
 }
@@ -47,12 +47,12 @@
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: #fff;
+  background: #1a1a1a;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .contact__detail-label {
@@ -60,13 +60,13 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #888;
+  color: #999;
   margin-bottom: 2px;
 }
 
 .contact__detail-value {
   font-weight: 500;
-  color: var(--green-dark);
+  color: #cccccc;
   font-size: 0.95rem;
   transition: color 0.2s;
 }
@@ -77,10 +77,10 @@ a.contact__detail-value:hover {
 
 /* Form */
 .contact__form {
-  background: #fff;
+  background: #161616;
   border-radius: 20px;
   padding: 2.5rem;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -97,10 +97,11 @@ a.contact__detail-value:hover {
   font-size: 1.75rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .contact__success p {
-  color: #555;
+  color: #999;
   font-size: 1.05rem;
 }
 
@@ -121,7 +122,7 @@ a.contact__detail-value:hover {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #666;
+  color: #999;
 }
 
 .contact__field input,
@@ -129,12 +130,12 @@ a.contact__detail-value:hover {
 .contact__field textarea {
   width: 100%;
   padding: 0.8rem 1rem;
-  border: 1.5px solid #e0e0e0;
+  border: 1.5px solid rgba(255,255,255,0.15);
   border-radius: 10px;
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: #333;
-  background: #fafafa;
+  color: #fff;
+  background: #1a1a1a;
   transition: border-color 0.25s, background 0.25s, box-shadow 0.25s;
 }
 
@@ -142,9 +143,14 @@ a.contact__detail-value:hover {
 .contact__field select:focus,
 .contact__field textarea:focus {
   outline: none;
-  border-color: var(--green);
-  background: #fff;
+  border-color: #7ab800;
+  background: #1a1a1a;
   box-shadow: 0 0 0 3px rgba(122, 184, 0, 0.1);
+}
+
+.contact__field input::placeholder,
+.contact__field textarea::placeholder {
+  color: #666;
 }
 
 .contact__field textarea {
