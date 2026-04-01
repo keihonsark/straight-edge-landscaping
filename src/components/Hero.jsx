@@ -32,7 +32,7 @@ export default function Hero() {
 
       <div className="container hero__content">
         <img
-          src="/Images/straightedgelogo.png"
+          src="/straightedgelogo.png"
           alt={config.business.name}
           className="hero__logo"
         />

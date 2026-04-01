@@ -308,7 +308,7 @@ export default function Estimate() {
       {/* Card */}
       <div className="est-body">
         <div className="est-card">
-          <img src="/Images/straightedgelogo.png" alt={config.business.name} className="est-card__logo" />
+          <img src="/straightedgelogo.png" alt={config.business.name} className="est-card__logo" />
           <h2 className="est-card__title">{STEP_TITLES[step - 1]}</h2>
 
           {/* STEP 1 */}

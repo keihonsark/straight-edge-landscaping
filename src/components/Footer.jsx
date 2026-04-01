@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container footer__grid">
         <div className="footer__brand">
           <div className="footer__logo">
-            <img src="/Images/straightedgelogo.png" alt={name} style={{ width: 140, height: 'auto', objectFit: 'contain', filter: 'brightness(1.2) drop-shadow(0 2px 8px rgba(0,0,0,0.5))', marginBottom: '1rem' }} />
+            <img src="/straightedgelogo.png" alt={name} style={{ width: 140, height: 'auto', objectFit: 'contain', filter: 'brightness(1.2) drop-shadow(0 2px 8px rgba(0,0,0,0.5))', marginBottom: '1rem' }} />
           </div>
           <p className="footer__desc">
             {footer.tagline}
