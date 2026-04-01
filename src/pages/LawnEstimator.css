@@ -1,0 +1,327 @@
+/* Hero */
+.le-hero {
+  background: var(--green-dark);
+  padding: 9rem 0 3rem;
+  text-align: center;
+}
+
+.le-hero__title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.le-hero__sub {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2.5rem;
+}
+
+.le-steps {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.le-step {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.le-step__num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #7ab800;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.le-step__text {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Tool section */
+.le-tool {
+  padding: 2rem 0 5rem;
+  background: #fff;
+}
+
+.le-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.le-search {
+  flex: 1;
+  min-width: 250px;
+}
+
+.le-search__input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #333;
+  background: #fafafa;
+  transition: border-color 0.25s;
+}
+
+.le-search__input:focus {
+  outline: none;
+  border-color: var(--green);
+  background: #fff;
+}
+
+/* Google Places autocomplete dropdown */
+.pac-container {
+  z-index: 10000 !important;
+  border-radius: 12px;
+  margin-top: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.le-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.le-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.le-btn--draw {
+  background: #7ab800;
+  color: #fff;
+}
+
+.le-btn--draw:hover {
+  background: #5a8a00;
+}
+
+.le-btn--finish {
+  background: #7ab800;
+  color: #fff;
+}
+
+.le-btn--finish:hover {
+  background: #5a8a00;
+}
+
+.le-btn--finish:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.le-btn--reset {
+  background: #f0f0f0;
+  color: #555;
+}
+
+.le-btn--reset:hover {
+  background: #e0e0e0;
+}
+
+.le-hint {
+  background: var(--green-pale);
+  border-left: 4px solid #7ab800;
+  padding: 0.75rem 1rem;
+  font-size: 0.88rem;
+  color: #333;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 1rem;
+}
+
+/* Map */
+.le-map {
+  width: 100%;
+  height: 550px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border: 2px solid #e8e8e8;
+}
+
+/* Results */
+.le-result {
+  margin-top: 2rem;
+  animation: leSlideUp 0.5s ease;
+}
+
+@keyframes leSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.le-result__card {
+  background: #fff;
+  border-radius: 20px;
+  border-top: 5px solid #7ab800;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.le-result__header {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.le-result__zones {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #eee;
+}
+
+.le-result__zone {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.35rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.le-result__zone-label {
+  font-weight: 500;
+}
+
+.le-result__zone-sqft {
+  font-weight: 600;
+  color: #333;
+}
+
+.le-result__total-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #888;
+}
+
+.le-result__sqft {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #0a0a0a;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.le-result__plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.le-result__plan-label {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.le-result__plan-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #7ab800;
+  background: var(--green-pale);
+  padding: 0.3rem 0.85rem;
+  border-radius: 100px;
+}
+
+.le-result__price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.le-result__price-label {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.le-result__price-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0a0a0a;
+}
+
+.le-result__price-note {
+  font-size: 0.78rem;
+  color: #aaa;
+}
+
+.le-result__cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.85rem 2rem;
+  background: #7ab800;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+.le-result__cta:hover {
+  background: #5a8a00;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .le-hero__title {
+    font-size: 2rem;
+  }
+
+  .le-steps {
+    gap: 1.25rem;
+  }
+
+  .le-map {
+    height: 400px;
+  }
+
+  .le-result__sqft {
+    font-size: 2.5rem;
+  }
+
+  .le-result__card {
+    padding: 2rem 1.5rem;
+  }
+
+  .le-controls {
+    flex-direction: column;
+  }
+}

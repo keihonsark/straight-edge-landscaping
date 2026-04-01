@@ -1,0 +1,49 @@
+.all-svc {
+  padding: 5rem 0;
+  background: var(--green-pale);
+}
+
+.all-svc__eyebrow {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+}
+
+.all-svc__heading {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.all-svc__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.all-svc__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  background: #fff;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(45, 106, 79, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.all-svc__pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(45, 106, 79, 0.12);
+}

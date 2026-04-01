@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npx --yes create-vite tempproject --template react)",
+      "Bash(cp -r tempproject/* tempproject/.* .)",
+      "Bash(rm -rf tempproject)",
+      "Bash(npm install:*)",
+      "Bash(npx vite:*)",
+      "Bash(netstat -ano)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5174/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5174/estimate)",
+      "Bash(curl -s -o /dev/null -w \" %{http_code}\" http://localhost:5174/estimate)",
+      "Bash(npx vercel:*)",
+      "Bash(ls -lh /c/Users/SS/Desktop/lawncare-bros/src/components/*.css)",
+      "Bash(ls -lh /c/Users/SS/Desktop/lawncare-bros/src/pages/*.css)",
+      "Bash(npm run:*)",
+      "Bash(ls c:/Users/SS/Desktop/lawncare-bros/public/sark*)",
+      "Bash(gh repo:*)",
+      "Bash(where gh:*)",
+      "Bash(where gh.exe)",
+      "Bash(winget install:*)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/SS/Desktop/lawncare-bros/$LOCALAPPDATA/**)",
+      "Read(//c/Users/SS/Desktop/lawncare-bros/$HOME/scoop/shims/**)",
+      "Bash(npm list:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5175/)",
+      "Bash(ls -la c:/Users/SS/Desktop/lawncare-bros/public/hero* c:/Users/SS/Desktop/lawncare-bros/public/Hero*)",
+      "Bash(ls c:/Users/SS/Desktop/lawncare-bros/src/pages/services/*.jsx)",
+      "Bash(ls \"c:\\\\Users\\\\SS\\\\Desktop\\\\clientwebsites\\\\lawncare\\\\lawncare-template\\\\public\\\\Images\"\" 2>/dev/null || ls \"c:/Users/SS/Desktop/clientwebsites/lawncare/lawncare-template/public/Images/ \")"
+    ]
+  }
+}

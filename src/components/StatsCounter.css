@@ -1,0 +1,102 @@
+.stats {
+  background: var(--black);
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 40px,
+    rgba(255, 255, 255, 0.02) 40px,
+    rgba(255, 255, 255, 0.02) 80px
+  );
+  padding: 4.5rem 0;
+  position: relative;
+  border-top: 1px solid #a0d400;
+  border-bottom: 1px solid #a0d400;
+}
+
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+  align-items: stretch;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 1.5rem;
+  border: 1px solid rgba(160, 212, 0, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(160, 212, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.stats__item:hover {
+  box-shadow: 0 0 30px rgba(160, 212, 0, 0.2);
+}
+
+.stats__icon {
+  margin-bottom: 0.25rem;
+}
+
+@keyframes statGradient {
+  0% { background-position: 0% center; }
+  100% { background-position: 300% center; }
+}
+
+.stats__num {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 800;
+  color: #a0d400;
+  line-height: 1;
+}
+
+.stats__num--gradient {
+  background: linear-gradient(90deg, #a0d400, #2dd4bf, #d4af37, #2dd4bf, #a0d400);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: statGradient 3.5s linear infinite;
+}
+
+.stats__google-stars {
+  font-size: 2.25rem;
+  color: #f5a623;
+  letter-spacing: 4px;
+  margin: 0.25rem 0;
+}
+
+.stats__item--google {
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.stats__counting {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(160, 212, 0, 0.5);
+}
+
+.stats__label {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 600px) {
+  .stats__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .stats__num {
+    font-size: 3rem;
+  }
+}

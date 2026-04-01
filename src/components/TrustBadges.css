@@ -1,0 +1,62 @@
+.badges {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.badges__heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.badges__row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.badges__card {
+  width: 200px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  border-top: 3px solid var(--green);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badges__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.badges__icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.badges__title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--green-dark);
+  margin-bottom: 0.25rem;
+}
+
+.badges__sub {
+  font-size: 0.78rem;
+  color: #888;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .badges__row {
+    gap: 1rem;
+  }
+
+  .badges__card {
+    width: calc(50% - 0.5rem);
+  }
+}

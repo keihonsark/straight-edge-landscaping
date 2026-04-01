@@ -1,0 +1,164 @@
+.rev {
+  padding: 6rem 0;
+  background: var(--green-pale);
+  overflow: hidden;
+}
+
+.rev__eyebrow {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+}
+
+.rev__heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Google badge pill */
+.rev__google-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #fff;
+  border-radius: 100px;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin: 1.5rem auto 2.5rem;
+  /* center the pill */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.rev__google-score {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+.rev__google-stars {
+  color: #f5a623;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+}
+
+.rev__google-count {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.rev__stars {
+  display: flex;
+  gap: 3px;
+}
+
+/* Marquee */
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.rev__marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.rev__marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+}
+
+.rev__marquee--left .rev__marquee-track {
+  animation: scroll-left 50s linear infinite;
+}
+
+.rev__marquee:hover .rev__marquee-track {
+  animation-play-state: paused;
+}
+
+/* Card */
+.rev__card {
+  flex-shrink: 0;
+  width: 300px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rev__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.rev__card .rev__stars {
+  margin-bottom: 0.75rem;
+}
+
+.rev__text {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+
+.rev__author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.rev__author-name {
+  display: block;
+  font-weight: 600;
+  color: var(--green-dark);
+  font-size: 0.9rem;
+}
+
+.rev__author-source {
+  display: block;
+  font-size: 0.7rem;
+  color: #999;
+  font-weight: 400;
+}
+
+.rev__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .rev__heading {
+    font-size: 2rem;
+  }
+
+  .rev__google-badge {
+    gap: 0.4rem;
+    padding: 0.6rem 1.25rem;
+  }
+
+  .rev__google-score {
+    font-size: 1.1rem;
+  }
+}
