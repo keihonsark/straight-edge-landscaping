@@ -25,6 +25,15 @@ function Slider({ before, after, label }) {
     e.preventDefault()
     dragging.current = true
     updatePos(e.clientX)
+
+    const onMove = (ev) => updatePos(ev.clientX)
+    const onUp = () => {
+      dragging.current = false
+      window.removeEventListener('mousemove', onMove)
+      window.removeEventListener('mouseup', onUp)
+    }
+    window.addEventListener('mousemove', onMove)
+    window.addEventListener('mouseup', onUp)
   }, [updatePos])
 
   const onMouseMove = useCallback((e) => {

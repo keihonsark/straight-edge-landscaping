@@ -172,6 +172,7 @@ export default function Estimate() {
   // Step 1
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
+  const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [address, setAddress] = useState('')
   const [city, setCity] = useState('')
@@ -210,6 +211,7 @@ export default function Estimate() {
     const body = {
       firstName,
       lastName,
+      email,
       phone,
       address,
       city,
@@ -323,6 +325,10 @@ export default function Estimate() {
                   <label>Last Name</label>
                   <input type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} placeholder="Last name" />
                 </div>
+              </div>
+              <div className="est-field">
+                <label>Email Address *</label>
+                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="your@email.com" required />
               </div>
               <div className="est-field">
                 <label>Phone Number *</label>
