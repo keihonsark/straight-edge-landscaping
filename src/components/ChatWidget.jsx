@@ -75,7 +75,7 @@ export default function ChatWidget() {
     setShowDot(false)
     if (!hasOpened) {
       setHasOpened(true)
-      setMessages([{ from: 'bot', text: "Hey there! 👋 Need help with your lawn? I'm here to answer any questions!" }])
+      setMessages([{ from: 'bot', text: "Hey there! Need help with your lawn? I'm here to answer any questions." }])
     }
   }
 
@@ -107,7 +107,7 @@ export default function ChatWidget() {
           <div className="chat-header">
             <img src="/straightedgelogo.png" alt={shortName} className="chat-header__logo" />
             <div className="chat-header__info">
-              <span className="chat-header__name">{shortName} Assistant</span>
+              <span className="chat-header__name">Straight Edge AI</span>
               <span className="chat-header__status">Typically replies instantly</span>
             </div>
             <button className="chat-header__close" onClick={() => setOpen(false)} aria-label="Close chat">

@@ -78,8 +78,9 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 10px;
-  background: rgba(122,184,0,0.1);
+  border-radius: 8px;
+  background: #1a1a1a;
+  padding: 10px;
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
 }

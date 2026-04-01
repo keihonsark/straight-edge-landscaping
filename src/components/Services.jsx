@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom'
+import { Scissors, Layers, Droplets, Mountain, TreePine, Hammer } from 'lucide-react'
 import config from '../config'
 import './Services.css'
 
 const { services: svcContent } = config.content
 
 const services = [
-  { img: '/08_lawn_maintenance.png', icon: '🌱', title: 'Lawn Maintenance', desc: 'Mowing, edging, trimming, and blowing. Weekly and bi-weekly plans to keep your lawn sharp all season.', link: '/services/lawn-maintenance' },
-  { img: '/03_sod_installation.png', icon: '🏡', title: 'Sod & Turf Installation', desc: 'Fresh sod laid professionally for an instant lush lawn. We handle prep, install, and aftercare.', link: '/services/sod-installation' },
-  { img: '/06_sprinkler_system.png', icon: '💧', title: 'Irrigation Systems', desc: 'Sprinkler and drip system installation and repair for efficient, reliable watering.', link: '/services/irrigation-systems' },
-  { img: '/mulch.png', icon: '🪨', title: 'Mulch & River Rock', desc: 'Decorative ground cover installation to protect your plants and boost curb appeal.', link: '/services/mulch-river-rock' },
-  { img: '/07_tree_service.png', icon: '🌳', title: 'Tree & Stump Services', desc: 'Professional tree trimming, removal, and stump grinding by experienced crews.', link: '/services/tree-services' },
-  { img: '/landscape-hardscape.png', icon: '🏗️', title: 'Landscaping & Hardscape', desc: 'Full landscaping, cement work, gardening, and construction services.', link: '/services/landscaping-hardscape' },
+  { img: '/08_lawn_maintenance.png', icon: <Scissors size={24} color="#7ab800" strokeWidth={1.5} />, title: 'Lawn Maintenance', desc: 'Mowing, edging, trimming, and blowing. Weekly and bi-weekly plans to keep your lawn sharp all season.', link: '/services/lawn-maintenance' },
+  { img: '/03_sod_installation.png', icon: <Layers size={24} color="#7ab800" strokeWidth={1.5} />, title: 'Sod & Turf Installation', desc: 'Fresh sod laid professionally for an instant lush lawn. We handle prep, install, and aftercare.', link: '/services/sod-installation' },
+  { img: '/06_sprinkler_system.png', icon: <Droplets size={24} color="#7ab800" strokeWidth={1.5} />, title: 'Irrigation Systems', desc: 'Sprinkler and drip system installation and repair for efficient, reliable watering.', link: '/services/irrigation-systems' },
+  { img: '/mulch.png', icon: <Mountain size={24} color="#7ab800" strokeWidth={1.5} />, title: 'Mulch & River Rock', desc: 'Decorative ground cover installation to protect your plants and boost curb appeal.', link: '/services/mulch-river-rock' },
+  { img: '/07_tree_service.png', icon: <TreePine size={24} color="#7ab800" strokeWidth={1.5} />, title: 'Tree & Stump Services', desc: 'Professional tree trimming, removal, and stump grinding by experienced crews.', link: '/services/tree-services' },
+  { img: '/landscape-hardscape.png', icon: <Hammer size={24} color="#7ab800" strokeWidth={1.5} />, title: 'Landscaping & Hardscape', desc: 'Full landscaping, cement work, gardening, and construction services.', link: '/services/landscaping-hardscape' },
 ]
 
 export default function Services() {
